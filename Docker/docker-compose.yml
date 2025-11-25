@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  haiintel:
+    build: .
+    container_name: haiintel-orchestrator
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - PORT=8000
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    restart: unless-stopped
+    networks:
+      - haiintel-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  haiintel-network:
+    driver: bridge
+
+volumes:
+  logs:
+  data:
