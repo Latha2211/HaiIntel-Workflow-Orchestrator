@@ -370,9 +370,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Support
 
 For issues and questions:
-- 📫 Email: support@haiintel.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/haiintel-workflow-orchestrator/issues)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/haiintel-workflow-orchestrator/wiki)
+- 📫 Email: latharaja4321@gmail.com
+  
 
 ## 🗺️ Roadmap
 
