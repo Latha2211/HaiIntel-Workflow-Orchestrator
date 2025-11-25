@@ -385,4 +385,4 @@ For issues and questions:
 
 ---
 
-**Made with ❤️ by HaiIntel Team**
+
